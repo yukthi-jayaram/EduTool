@@ -10,7 +10,8 @@ package org.yukthi.edutool.entity;
 public class Class {
 	
 	private Integer classID;
+	
 	private Integer roomNumber;
 	
-
+	
 }

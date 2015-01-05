@@ -3,7 +3,6 @@
  */
 package org.yukthi.edutool.entity;
 
-import java.time.Year;
 
 /**
  * @author M1019330
@@ -15,7 +14,9 @@ public class FeeStructure {
 
 	private String feeDescription;
 
-	private Year acedemicYear;
+	private Class associatedClass;
+
+	private Integer acedemicYear;
 
 	private Long fee;
 
@@ -24,7 +25,5 @@ public class FeeStructure {
 	};
 
 	private PaymentPeriod period;
-	
-	
 
 }
