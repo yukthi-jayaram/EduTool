@@ -9,9 +9,9 @@ package org.yukthi.edutool.entity;
  */
 public class Class {
 	
-	private Integer classID;
+	private int classID;
 	
-	private Integer roomNumber;
+	private int roomNumber;
 	
 	
 }

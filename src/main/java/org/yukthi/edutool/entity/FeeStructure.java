@@ -10,15 +10,15 @@ package org.yukthi.edutool.entity;
  */
 public class FeeStructure {
 
-	private Long id;
+	private long id;
 
 	private String feeDescription;
 
 	private Class associatedClass;
 
-	private Integer acedemicYear;
+	private int acedemicYear;
 
-	private Long fee;
+	private double fee;
 
 	public enum PaymentPeriod {
 		MONTLY, QUTERLY, HALFLY, YEARLY

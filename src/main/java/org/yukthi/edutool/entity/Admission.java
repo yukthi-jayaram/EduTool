@@ -7,13 +7,15 @@ import java.util.Set;
 
 public class Admission {
 
-	private Long admissionId;
+	private long admissionId;
 	
-	private Year acedemicYear;
+	private boolean active;
+	
+	private int acedemicYear;
 	
 	private Date doj;
 	
-	private boolean rteEligibile;
+	private double rteDiscount;
 	
 	private Student student;
 	
@@ -25,6 +27,5 @@ public class Admission {
 		NEW, PROMOTED, REPEATED
 	};
 
-	
 	
 }

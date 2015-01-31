@@ -11,7 +11,7 @@ import java.util.Date;
  */
 public class Student {
 
-	private Long studentUIN;
+	private long studentUIN;
 	
 	private String firstName;
 	

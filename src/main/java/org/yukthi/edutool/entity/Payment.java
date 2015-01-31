@@ -1,10 +1,19 @@
 package org.yukthi.edutool.entity;
 
+import java.util.Date;
+
 public class Payment {
 
-	private Long paymentId;
+	private long paymentId;
 	
-	private Integer year;
+	private Admission admission;
 	
-	private 
+	private FeeStructure feeStructure;
+	
+	private double payment;
+	
+	private Date dop;
+	
+	
+	
 }
