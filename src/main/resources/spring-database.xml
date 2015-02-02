@@ -10,7 +10,7 @@
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/onedash" />
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/edutool" />
 		<property name="user" value="root" />
 		<property name="password" value="Welcome123" />
 		<!-- these are C3P0 properties -->
