@@ -30,7 +30,7 @@ public class Admission {
 	@Id
 	private UUID admissionId;
 
-	private boolean active;
+	private boolean active = true;
 
 	private int acedemicYear;
 

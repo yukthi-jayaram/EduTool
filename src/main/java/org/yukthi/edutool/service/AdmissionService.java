@@ -19,8 +19,8 @@ public interface AdmissionService {
 	
 	void payAdmissionFee(UUID admissionID , Payment payment)throws ServiceException;
 	
-	void deabmitStudent(Admission admission)throws ServiceException;
+	void deAbmitStudent(UUID admissionID)throws ServiceException;
 	
-	void payAdmissionFeeDeu(UUID admissionID , Payment payment)throws ServiceException;
+	void payAdmissionFeeDue(UUID admissionID , Payment payment)throws ServiceException;
 	
 }

@@ -15,7 +15,7 @@
 	
 	<mvc:annotation-driven />
 	
-	<mvc:view-controller path="/login" view-name="login" />
+	<mvc:view-controller path="/" view-name="login" />
 
 	<mvc:resources location="/WEB-INF/assets/" mapping="/assets/**" />
 	<mvc:resources location="/WEB-INF/css/" mapping="/css/**" />
@@ -25,7 +25,7 @@
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
-			<value>/WEB-INF/views/</value>
+			<value>/WEB-INF/jsp/</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
