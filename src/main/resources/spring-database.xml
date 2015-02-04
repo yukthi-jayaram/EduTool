@@ -12,7 +12,7 @@
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/edutool" />
 		<property name="user" value="root" />
-		<property name="password" value="Welcome123" />
+		<property name="password" value="root" />
 		<!-- these are C3P0 properties -->
 		<property name="acquireIncrement" value="3" />
 		<property name="minPoolSize" value="10" />
@@ -20,7 +20,8 @@
 		<property name="maxIdleTime" value="60" />
 	</bean>
 	
-	<context:component-scan base-package="org.yukthi.edutool.dao.impl"/>
+	<context:component-scan base-package="org.yukthi.edutool.dao.hibernate"/>
+	<context:component-scan base-package="org.yukthi.edutool.service.impl"/>
 	
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
@@ -36,6 +37,9 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
+	</bean>
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	 <constructor-arg index="0" ref="sessionFactory"/>
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<bean id="transactionManager"
